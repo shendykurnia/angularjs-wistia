@@ -1,0 +1,20 @@
+{
+  "name": "angularjs-wistia",
+  "authors": [
+    "Shendy Kurnia <shendykurnia@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "blueimp-file-upload": "^9.22.0"
+  }
+}

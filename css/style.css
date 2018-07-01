@@ -1,0 +1,34 @@
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+file-upload {
+    display: block;
+    margin: 25px auto;
+    width: 80%;
+}
+
+@media only screen and (min-width: 992px) {
+    file-upload {
+        width: 75%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    file-upload {
+        width: 50%;
+    }
+}

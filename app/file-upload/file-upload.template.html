@@ -1,0 +1,25 @@
+<div class="fileUpload btn btn-primary" ng-hide="$ctrl.isProgressing || $ctrl.video">
+    <span>Upload</span>
+    <input type="file" class="upload">
+</div>
+<div class="alert alert-warning" ng-show="$ctrl.error">
+    <strong>Error!</strong> {{ $ctrl.error }}
+</div>
+<div><progress-bar ng-show="$ctrl.isProgressing"></progress-bar></div>
+<div>
+    <iframe
+        ng-src="{{ $ctrl.getVideoUrl() }}"
+        ng-show="$ctrl.getVideoUrl()"
+        allowtransparency="true"
+        frameborder="0"
+        scrolling="no"
+        class="wistia_embed"
+        name="wistia_embed"
+        allowfullscreen
+        mozallowfullscreen
+        webkitallowfullscreen
+        oallowfullscreen
+        msallowfullscreen
+        width="640"
+        height="360"></iframe>
+</div>
